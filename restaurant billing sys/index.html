@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Menu</h1>
+
+        <div id="menu"></div>
+        <form id="orderForm">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" required>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <br>
+            <label for="tableNumber">Table Number:</label>
+            <input type="number" id="tableNumber" name="tableNumber" min="1" required>
+            <br>
+            <button type="submit">Submit Order</button>
+        </form>
+        <div id="bill"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
